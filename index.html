@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARTU UCAPAN</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        .greeting-card {
+            width: 300px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        .card-header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card-footer {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.8em;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin: 5px;
+        }
+
+        .yes-button {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .no-button {
+            background-color: #e74c3c;
+            color: #fff;
+        }
+
+        .button:hover {
+            background-color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <audio id="bgMusic">
+        <source src="musik.mp3" type="audio/mp3"/>
+    </audio>
+    <div class="greeting-card">
+        <div class="card-header">
+            HI Tan 👋👋
+        </div>
+        <div class="card-content">
+            <p>Aku engga memaksa gawe amu mbuka file iki. lek berkenan klik iya <br>
+            lek engga berkenan boleh klik tidak</p>
+            <button id="btn_music" onclick='music()'>Play/Pause</button>
+        </div>
+        <div class="card-footer">
+            Dikirimkan oleh: Codename X
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button class="button yes-button" onclick="onYesClick()">Iya</button>
+        <button class="button no-button" onclick="onNoClick()">Tidak</button>
+    </div>
+
+    <script>
+        function onYesClick() {
+            alert('HI');
+            alert('juga sebener e aku ga pantes gawe menyapa & bersikap ramah');
+            alert('aku cuma pingin ngomong titik, lek berkenan iso diteruskan');
+            alert('aku engga meminta kesempatan maneh. aku engga meminta gawe iso cedek maneh');
+            alert('aku cuma pingin minta maaf');
+            alert('walau sebener e, kata maaf gaakan iso menebus hal sing iso terjadi');
+            alert('aku ngomong dengan bener bener sadar, aku bener bener salah');
+            alert('bien mungkin pemikiranku sek gaiso dewasa, tapi semakin aku ngerti, semakin aku sadar sesalah opo aku');
+            alert('bahkan sampai hari iki, kesalahanku sek terus membayangi');
+            alert('dan hal iku juga berdampak gawe rutinitasku');
+            alert('aku dadi ga wani seneng ark wedok maneh');
+            alert('bahkan aku ragu ketika aku melakukan sesuatu sing ono hubungan e mbek PBB');
+            alert('soal e yo, kabeh iku gegara aku');
+            alert('Sial-Mahalini ; Rumah SIngga-Fabio Asher ; dan sek akeh maneh lagu sing ditujukan gawe aku');
+            alert('juga When I Was Your Man-Bruno Mars (?)');
+            alert('bahkan lagu gawe backsound saiki juga gawe aku');
+            alert('sekali lagi, aku engga pingin meminta kesempatan dan iso cedek. tapi aku bener bener pingin minta maaf');
+            alert('maaf lek aku teko maneh ndek hidupmu disaat mungkin amuu wes (mulai) baik baik saja');
+            alert('aku ragu kate kirim file iki');
+            alert('aku wedi lek bakal kembali menganggu kehidupanmu')
+            alert('maaf dan terimakasih')
+            window.location = "https://wa.me/6289682369567";
+        }
+
+        function onNoClick() {
+            alert('maaf, aku mbalek masuk nang kehidupanmu');
+            window.location = "https://vt.tiktok.com/ZSNHhWT9H/"
+        }
+
+        var audioPlaying = false;
+        function music() {
+            var audio = document.getElementById("bgMusic");
+            if (audioPlaying) audio.pause();
+            else audio.play();
+            audioPlaying = !audioPlaying;
+        }
+    </script>
+</body>
+</html>
